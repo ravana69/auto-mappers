@@ -1,0 +1,113 @@
+html,
+body,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:hidden;
+  
+}
+#unexplored {
+  font-size:80%;
+  position:absolute;
+  left:0;
+  z-index:10;
+  background-color:rgba(0,0,0,.3)
+}
+#count {
+  font-size:80%;
+  position:absolute;
+  right:0;
+  z-index:10;
+  background-color:rgba(0,0,0,.3)
+}
+svg {
+  width: 100vw;
+  height: 100vh; 
+}
+
+.blocker {
+  transition: fill 5s;
+  fill: blue;
+}
+.base {
+  fill: black;
+}
+.solid1a {
+  fill: rgb(112, 195, 250);
+}
+.solid2a {
+  fill: rgb(182, 243, 16);
+}
+.solid3a {
+  fill: rgb(111, 5, 250);;
+}
+.solid4a {
+  fill: rgb(250, 8, 109);
+}
+.blue {
+  opacity: 1;
+  fill: rgb(14, 128, 204);
+  stroke:rgb(238, 124, 17);
+}
+.green {
+  opacity: 1;
+  fill: rgb(112, 185, 17);
+  stroke:red;
+}
+.purple {
+  opacity: 1;
+  fill: rgb(132, 5, 250);
+  stroke:rgb(22, 233, 50);
+}
+.red {
+  opacity: 1;
+  fill: rgb(236, 6, 6);
+  stroke:yellow;
+}
+
+.invisible {
+  display: none;
+}
+
+/*https://loading.io/css/*/
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position:absolute;
+  top:49%;
+  left:49%;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
